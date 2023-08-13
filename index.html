@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Line Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px;
+      padding: 0;
+      background-color: #C0BFBA;
+    }
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+   
+  
+
+.first{
+  
+  width:50%;
+  display: grid;
+  grid-template-columns: 1.42fr 0.88fr 0.68fr 0.22fr;/*320px 198px 153px 50px;*/
+  grid-template-rows: 28.7vw 9.02vw 10.76vw 1.52vw;/*414px 130px 155px 22px;*/
+  gap: 9px ;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+  background-color: black;
+}
+.first>li:nth-child(1){
+      grid-column: span 1;
+      background-color: red;
+      border: none;
+}
+.first>li:nth-child(2){
+      grid-column: span 3;
+      background-color:white; 
+      border: none;
+}
+.first>li:nth-child(3){
+      grid-row: span 2;
+      background-color: white;
+      border:none;
+}
+.first>li:nth-child(4){
+      grid-area:2 / 2 / 4 /4;
+      background-color: white;
+      border:none;
+}
+.first>li:nth-child(5){
+      background-color:#004592;
+      border:none;
+      border-bottom:10px solid black;
+}
+.first>li:nth-child(6){
+      background-color:white;
+      border:none;
+      grid-row: span 2;
+}
+.first>li:nth-child(7){
+      background-color:white;
+      border:none;
+      grid-row:span 2;
+}
+.first>li:nth-child(8){
+      background-color:yellow;
+      border:none;
+      border-bottom: none;
+}
+.first>li:nth-child(9){
+      background-color:gold;
+      border:none;
+     
+}
+
+.second {
+  margin-top: 100px;
+  width:50%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
+  grid-template-rows: repeat(5, 13vw) 11vw 6.5vw 6.5vw;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+  gap:9px;
+  background-color: black;
+}
+.second>li:nth-child(1) {
+  grid-column: span 2;
+  background-color: #E5EEEB; 
+  border-top: none;
+  border-left: none;
+}
+.second>li:nth-child(2) {
+  grid-column: span 3;
+  background-color: #F2E7D5;
+  border-top: none;
+}
+.second>li:nth-child(3) {
+  grid-column: span 2;
+  background-color: #F2C968;
+  border-top: none;
+}
+.second>li:nth-child(4) {
+  grid-row: span 6;
+  background-color: #FCFDE7;
+  border-top: none;
+  border-right: none;
+}
+.second>li:nth-child(5) {
+  grid-row: span 2;
+  background-color: #FBFDE7;
+  border-left: none;
+}
+.second>li:nth-child(6) {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: #D62D24;
+}
+.second>li:nth-child(7) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #EDCC6B;
+}
+.second>li:nth-child(8) {
+  grid-row: span 3;
+  background-color: #E1EAE5;
+  border-left: none;
+}
+.second>li:nth-child(9) {
+  grid-row: span 2;
+  background-color: #DFE5D0;
+}
+.second>li:nth-child(10) {
+  grid-row: span 2;
+  background-color: #F2EEE2;
+}
+.second>li:nth-child(11) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #130409;
+}
+.second>li:nth-child(12) {
+  grid-column: span 2;
+  background-color: #C0BFBA;
+}
+.second>li:nth-child(13) {
+  grid-column: span 2;
+  background-color: #D6DEE0;
+}
+.second>li:nth-child(14) {
+  grid-row: span 3;
+  background-color: #F4C65A;
+  border-left: none;
+  border-bottom: none;
+}
+.second>li:nth-child(15) {
+  grid-column: span 2;
+  background-color: #DEE2D4;
+}
+.second>li:nth-child(16) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #241785;
+  border:none;
+}
+.second>li:nth-child(17) {
+  grid-row: span 3;
+  background-color: #D73630;
+  border-bottom: none;
+  border-right: none;
+}
+.second>li:nth-child(18) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #E3DED9;
+  border-bottom: none;
+}
+.second>li:nth-child(19) {
+  grid-column: span 2;
+  background-color: #0B0205;
+  border:none;
+}
+.second>li:nth-child(20) {
+  grid-column: span 4;
+  background-color: #E0E0DF;
+  border-bottom: none;
+}
+    
+</style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <h1>These are some of the Mondrian paintings</h1>
+  <ul class="first">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+  </ul>
+  <ul class="second">
+
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+  </ul>
+  
+</body>
+
+</html>
